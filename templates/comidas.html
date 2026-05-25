@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Plan de comidas</h2>
+<form method="POST">
+    <label for="dia">Día:</label>
+    <input type="text" id="dia" name="dia" placeholder="Ej: Lunes" required>
+
+    <label for="menu">Menú:</label>
+    <input type="text" id="menu" name="menu" placeholder="Ej: Pollo con ensalada" required>
+
+    <button type="submit">Agregar</button>
+</form>
+
+<h3>Menú semanal</h3>
+<ul>
+{% for c in comidas %}
+    <li><strong>{{ c.dia }}</strong>: {{ c.menu }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

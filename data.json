@@ -1,0 +1,34 @@
+{
+    "recordatorios": [
+        {
+            "nombre": "examen",
+            "categoria": "lengua",
+            "fecha": "semana que vine"
+        },
+        {
+            "nombre": "examen",
+            "categoria": "ingles",
+            "fecha": "martes"
+        },
+        {
+            "nombre": "ingles2",
+            "categoria": "asda",
+            "fecha": "asd"
+        }
+    ],
+    "comidas": [
+        {
+            "dia": "martes",
+            "menu": "sopa"
+        },
+        {
+            "dia": "martes",
+            "menu": "pollo"
+        }
+    ],
+    "pendientes": [
+        {
+            "tarea": "limpiar"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Pendientes</h2>
+<form method="POST">
+    <label for="tarea">Tarea pendiente:</label>
+    <input type="text" id="tarea" name="tarea" placeholder="Ej: Comprar útiles escolares" required>
+
+    <button type="submit">Agregar</button>
+</form>
+
+<h3>Lista de pendientes</h3>
+<ul>
+{% for p in pendientes %}
+    <li>{{ p.tarea }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

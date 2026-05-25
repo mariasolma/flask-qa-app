@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Recordatorios</h2>
+<form method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="categoria">Categoría:</label>
+    <input type="text" id="categoria" name="categoria" required>
+
+    <label for="fecha">Fecha (texto libre):</label>
+    <input type="text" id="fecha" name="fecha" placeholder="Ej: mañana, 15/06/2026, cuando vuelva" required>
+
+    <button type="submit">Agregar</button>
+</form>
+
+<h3>Lista de recordatorios</h3>
+<ul>
+{% for r in recordatorios %}
+    <li><strong>{{ r.nombre }}</strong> — {{ r.categoria }} — {{ r.fecha }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
