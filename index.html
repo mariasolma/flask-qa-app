@@ -1,28 +1,21 @@
-{% extends "base.html" %}
-{% block content %}
-<h2>Bienvenida</h2>
-<p>Este sistema te ayuda a organizar recordatorios, comidas, pendientes y ver los datos guardados.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flask QA App</title>
+  <!-- El CSS está al mismo nivel que index.html -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Logo (cuando lo tengas) también al mismo nivel -->
+  <img src="logo.png" alt="Logo Flask QA App" width="150">
 
-<div style="margin-top: 30px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
-    <a href="{{ url_for('recordatorios') }}" 
-       style="flex:1; min-width:150px; text-align:center; padding:15px 20px; background-color:#4CAF50; color:white; text-decoration:none; border-radius:8px;">
-       📌 Recordatorios
-    </a>
+  <h1>Bienvenido a Flask QA App</h1>
+  <p>
+    Este proyecto es una aplicación de preguntas y respuestas construida con Flask.
+    Aquí podés explorar el código y ver cómo funciona el backend en Python.
+  </p>
 
-    <a href="{{ url_for('comidas') }}" 
-       style="flex:1; min-width:150px; text-align:center; padding:15px 20px; background-color:#2196F3; color:white; text-decoration:none; border-radius:8px;">
-       🍽️ Comidas
-    </a>
-
-    <a href="{{ url_for('pendientes') }}" 
-       style="flex:1; min-width:150px; text-align:center; padding:15px 20px; background-color:#FF9800; color:white; text-decoration:none; border-radius:8px;">
-       ✅ Pendientes
-    </a>
-
-    <a href="{{ url_for('datos') }}" 
-       style="flex:1; min-width:150px; text-align:center; padding:15px 20px; background-color:#9C27B0; color:white; text-decoration:none; border-radius:8px;">
-       📂 Datos JSON
-    </a>
-</div>
-{% endblock %}
-
+  <a href="https://github.com/mariasolma/flask-qa-app" target="_blank">Ver código en GitHub</a>
+</body>
+</html>
