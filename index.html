@@ -6,16 +6,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Flask QA App</h1>
-  <p>
-    Proyecto de preguntas y respuestas construido con Flask.  
-    Esta landing es una presentación estática para mostrar el proyecto.
-  </p>
+  <header>
+    <h1>Flask QA App</h1>
+    <nav>
+      <a href="https://github.com/mariasolma/flask-qa-app" target="_blank">Ver código</a>
+      <a href="mailto:tuemail@example.com">Contacto</a>
+    </nav>
+  </header>
 
-  <div class="buttons">
-    <a href="https://github.com/mariasolma/flask-qa-app" class="btn" target="_blank">Ver código en GitHub</a>
-    <a href="mailto:tuemail@example.com" class="btn">Contacto</a>
-    <a href="#" class="btn">Demo (próximamente)</a>
-  </div>
+  <main>
+    <h2>Descripción</h2>
+    <p>
+      Proyecto de preguntas y respuestas construido con Flask.  
+      Esta landing es una presentación estática para mostrar el proyecto.
+    </p>
+
+    <form>
+      <label for="pregunta">Escribe tu pregunta:</label>
+      <input type="text" id="pregunta" name="pregunta" placeholder="Ejemplo: ¿Qué es Flask?">
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Ejemplos</h2>
+    <ul>
+      <li>¿Qué es Flask?</li>
+      <li>¿Cómo funciona GitHub Pages?</li>
+      <li>¿Qué es una API REST?</li>
+    </ul>
+  </main>
 </body>
 </html>
+
